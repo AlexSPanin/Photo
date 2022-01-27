@@ -56,15 +56,55 @@
 		E2B0BB7227A2BF8100FFB922 /* Photo */ = {
 			isa = PBXGroup;
 			children = (
-				E2B0BB7327A2BF8100FFB922 /* AppDelegate.swift */,
-				E2B0BB7527A2BF8100FFB922 /* SceneDelegate.swift */,
-				E2B0BB7727A2BF8100FFB922 /* ViewController.swift */,
-				E2B0BB7927A2BF8100FFB922 /* Main.storyboard */,
-				E2B0BB7C27A2BF8300FFB922 /* Assets.xcassets */,
-				E2B0BB7E27A2BF8300FFB922 /* LaunchScreen.storyboard */,
-				E2B0BB8127A2BF8300FFB922 /* Info.plist */,
+				E2B0BB8B27A2C05C00FFB922 /* Files */,
+				E2B0BB8A27A2C04600FFB922 /* Support */,
+				E2B0BB8927A2C03A00FFB922 /* Servises */,
+				E2B0BB8827A2C02D00FFB922 /* Viewcontrollers */,
+				E2B0BB8727A2C02100FFB922 /* Storyboards */,
 			);
 			path = Photo;
+			sourceTree = "<group>";
+		};
+		E2B0BB8727A2C02100FFB922 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E2B0BB7E27A2BF8300FFB922 /* LaunchScreen.storyboard */,
+				E2B0BB7927A2BF8100FFB922 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E2B0BB8827A2C02D00FFB922 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				E2B0BB7727A2BF8100FFB922 /* ViewController.swift */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		E2B0BB8927A2C03A00FFB922 /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Servises;
+			sourceTree = "<group>";
+		};
+		E2B0BB8A27A2C04600FFB922 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E2B0BB7327A2BF8100FFB922 /* AppDelegate.swift */,
+				E2B0BB7527A2BF8100FFB922 /* SceneDelegate.swift */,
+				E2B0BB8127A2BF8300FFB922 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E2B0BB8B27A2C05C00FFB922 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2B0BB7C27A2BF8300FFB922 /* Assets.xcassets */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QD5349NP78;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Photo/Info.plist;
+				INFOPLIST_FILE = Photo/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QD5349NP78;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Photo/Info.plist;
+				INFOPLIST_FILE = Photo/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
