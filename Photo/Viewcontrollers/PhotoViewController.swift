@@ -66,10 +66,10 @@ class PhotoViewController: UIViewController, UINavigationControllerDelegate, UII
     func imageFilter(_ image: UIImage) {
         let context = CIContext(options: nil)
         
-        if let currentFilter = CIFilter(name: "CISepiaTone") {
+        if let currentFilter = CIFilter(name: "CIPhotoEffectMono") {
             let beginImage = CIImage(image: image)
-            currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
-            currentFilter.setValue(0.9, forKey: kCIInputIntensityKey)
+            currentFilter.setValue(beginImage, forKey: kCIInputImageKey) // ключ определяет определяет входное изображение
+      //      currentFilter.setValue(0.9, forKey: kCIInputIntensityKey) - ключ определяет интенсивность фильта, для Монохрома не нужен
             
             if let output = currentFilter.outputImage {
                 if let cgimg = context.createCGImage(output, from: output.extent) {
