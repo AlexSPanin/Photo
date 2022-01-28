@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,61 +16,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KhG-7a-2Ta">
-                                <rect key="frame" x="73" y="54" width="268" height="399"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="bSM-ka-ZRQ" userLabel="top button">
+                                <rect key="frame" x="79" y="279.33333333333331" width="256" height="30.666666666666686"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="bSM-ka-ZRQ" userLabel="top button">
-                                        <rect key="frame" x="0.0" y="0.0" width="268" height="36.5"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDt-Oq-xIo" userLabel="Galary">
-                                                <rect key="frame" x="0.0" y="3" width="109" height="31"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="photo" catalog="system"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVi-mT-l5e" userLabel="Photo">
-                                                <rect key="frame" x="159" y="3" width="109" height="31"/>
-                                                <color key="tintColor" name="AccentColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="camera" catalog="system"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="photoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zdb-5O-kYl"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vxk-dC-BBk">
-                                        <rect key="frame" x="0.0" y="41.5" width="268" height="357.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Vxk-dC-BBk" secondAttribute="height" multiplier="3:4" id="Qs6-Ir-5VX"/>
-                                        </constraints>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDt-Oq-xIo" userLabel="Galary">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="30.666666666666668"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="photo" catalog="system"/>
+                                        <connections>
+                                            <action selector="gallaryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hS0-S2-WRb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVi-mT-l5e" userLabel="Photo">
+                                        <rect key="frame" x="153" y="0.0" width="103" height="30.666666666666668"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="camera" catalog="system"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="photoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zdb-5O-kYl"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="bSM-ka-ZRQ" firstAttribute="leading" secondItem="KhG-7a-2Ta" secondAttribute="leading" id="KP3-Lt-q6S"/>
-                                    <constraint firstAttribute="trailing" secondItem="bSM-ka-ZRQ" secondAttribute="trailing" id="zGR-HR-jdz"/>
-                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqq-x4-6rX">
-                                <rect key="frame" x="168.5" y="463" width="77" height="44"/>
+                                <rect key="frame" x="168.66666666666666" y="581" width="77" height="44"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1dc-XM-qnW"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vxk-dC-BBk">
+                                <rect key="frame" x="79" y="320" width="256" height="256"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vxk-dC-BBk" secondAttribute="height" multiplier="1:1" id="Qs6-Ir-5VX"/>
+                                    <constraint firstAttribute="width" constant="256" id="zgH-1Q-LvM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="KhG-7a-2Ta" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5oy-x2-fMV"/>
-                            <constraint firstItem="KhG-7a-2Ta" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="NQs-5I-uPO"/>
-                            <constraint firstItem="oqq-x4-6rX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bx8-ju-T4s"/>
-                            <constraint firstItem="oqq-x4-6rX" firstAttribute="top" secondItem="KhG-7a-2Ta" secondAttribute="bottom" constant="10" id="pyI-G6-taN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="KhG-7a-2Ta" secondAttribute="bottom" id="qcM-M3-PQu"/>
+                            <constraint firstItem="bSM-ka-ZRQ" firstAttribute="trailing" secondItem="Vxk-dC-BBk" secondAttribute="trailing" id="0CB-de-Rq7"/>
+                            <constraint firstItem="Vxk-dC-BBk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bua-L5-MYR"/>
+                            <constraint firstItem="Vxk-dC-BBk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IqM-jl-A88"/>
+                            <constraint firstItem="oqq-x4-6rX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SZT-Dn-KLH"/>
+                            <constraint firstItem="bSM-ka-ZRQ" firstAttribute="leading" secondItem="Vxk-dC-BBk" secondAttribute="leading" id="a86-Vu-CsX"/>
+                            <constraint firstItem="Vxk-dC-BBk" firstAttribute="top" secondItem="bSM-ka-ZRQ" secondAttribute="bottom" constant="10" id="aO8-Vt-rw2"/>
+                            <constraint firstItem="oqq-x4-6rX" firstAttribute="top" secondItem="Vxk-dC-BBk" secondAttribute="bottom" constant="5" id="ahi-XN-RZY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -89,8 +89,5 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
